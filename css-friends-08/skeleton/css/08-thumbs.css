@@ -1,0 +1,36 @@
+/* PHASE 8: Thumbs */
+.friends {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.thumb {
+  padding: 7px;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: row;
+}
+
+.thumb img  {
+  height: 50px;
+  width: 50px;
+  border: solid black 2px;
+}
+
+.thumb::before {
+  position: absolute;
+  background: black;
+  color: white;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  content: attr(title);
+}
+.thumb::after{
+  position: absolute;
+  background: black;
+  color: white;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
